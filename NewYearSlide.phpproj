@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>NewYearSlide</Name>
+    <ProjectGuid>{f5178248-f716-41c9-9538-3613eca8bd6f}</ProjectGuid>
+    <RootNamespace>NewYearSlide</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    <Server>PHPDev</Server>
+    <PublishEvent>None</PublishEvent>
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>8796</PHPDevPort>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:8796/</IISProjectUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Views\main.php" />
+    <Compile Include="Views\preview.php" />
+    <Compile Include="Views\slideshow.php" />
+    <Compile Include="angular.min.js" />
+    <Compile Include="app.js" />
+    <Compile Include="image.php" />
+    <Compile Include="index.php" />
+    <Compile Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views" />
+  </ItemGroup>
+</Project>
