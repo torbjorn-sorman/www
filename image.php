@@ -22,7 +22,7 @@ function get_latest() {
 if (isset($_GET["last"])) {
     $last_path = $_GET["last"];    
     $images = get_latest();
-    if ($last_path == end($images)) {
+    if ($last_path == $images[count($images) - 1]) {
         echo $images[0]; 
     } else {
         for($i = 0; $i < count($images) - 1; ++$i) {
