@@ -69,6 +69,6 @@ body{
 
 .thumb{ 
     position: relative;   
-    float: right;
-    max-width: 180px;
+    float: left;
+    max-width: 300px;
 }

@@ -22,6 +22,7 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="info.php" />
     <Compile Include="preview.php" />
     <Compile Include="slideshow.php" />
     <Compile Include="Views\main.php" />

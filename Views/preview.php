@@ -12,7 +12,7 @@
     <div>
         <div ng-repeat="img in images">
             <a href="{{img}}">
-                <img ng-src="{{img}}" class="thumb" /></a>
+                <img ng-src="/thumbs/{{img}}" class="thumb" /></a>
         </div>
     </div>
     <script type="text/javascript" src="angular.min.js"></script>
