@@ -6,7 +6,11 @@ function path_microtime($path){
     return './uploads/' . $sec . $usec . '.' . $ext;
 }
 
-if(isset($_POST['submit']) && !empty($_FILES['fileToUpload']['name'])) {
+if(isset($_POST['submit'])) {
+    if (empty($_FILES['fileToUpload']['name'])) {
+        echo file_get_contents("./views/error.php");
+        exit();
+    }
     $target_dir = 'uploads/';
     $target_file = path_microtime($_FILES['fileToUpload']['name']);    
     $uploadOk = 1;
@@ -25,15 +29,14 @@ if(isset($_POST['submit']) && !empty($_FILES['fileToUpload']['name'])) {
         $uploadOk = 0;
     }
     // Allow certain file formats
-    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg' ) {
-        echo 'Sorry, enbart JPG, JPEG, PNG är tillåtet. ';
+    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg' ) {        
         $uploadOk = 0;
     }
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 1 && move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
-        echo 'Filen '. basename( $_FILES['fileToUpload']['name']). ' har laddats upp.';
+        echo file_get_contents("./views/success.php");
     } else {
-        echo 'Ledsen, något gick fel och filen laddades inte upp. ';
+        echo file_get_contents("./views/error.php");
     }
 } else {
     echo file_get_contents("./views/main.php");

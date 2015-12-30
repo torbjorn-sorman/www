@@ -30,6 +30,8 @@
     <Compile Include="image.php" />
     <Compile Include="index.php" />
     <Compile Include="style.css" />
+    <Compile Include="Views\error.php" />
+    <Compile Include="Views\success.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views" />
