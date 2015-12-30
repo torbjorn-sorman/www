@@ -22,11 +22,12 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="slideshow.php" />
     <Compile Include="Views\main.php" />
     <Compile Include="Views\preview.php" />
     <Compile Include="Views\slideshow.php" />
     <Compile Include="angular.min.js" />
-    <Compile Include="app.js" />
+    <Compile Include="slide.js" />
     <Compile Include="image.php" />
     <Compile Include="index.php" />
     <Compile Include="style.css" />
@@ -35,5 +36,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="preview.js" />
   </ItemGroup>
 </Project>

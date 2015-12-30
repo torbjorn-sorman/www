@@ -41,3 +41,8 @@ body{
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09), -1px -1px 0 rgba(255, 220, 0, 0.670);
     font-size: 2em;
 }
+
+.fillheight {
+    min-height: 100%; 
+    width: auto;
+}
