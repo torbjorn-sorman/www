@@ -8,6 +8,6 @@ app.controller('SlideController', function ($scope, $http, $interval) {
             console.log(response.data);
             $scope.path = response.data;
         });
-    }, 1000);
+    }, 7000);
         
 });

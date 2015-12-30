@@ -16,6 +16,16 @@ body{
     font-size: 1em;
 }
 
+.block-overlay {
+    padding: 0.1em;
+    font-family: sans;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+}
+
 .golden-base {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,7 +52,17 @@ body{
     font-size: 2em;
 }
 
+.golden3-overlay {
+    background-image: -webkit-linear-gradient(#FFF65C 45%, #9A8000 75%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.09), -1px -1px 0 rgba(255, 220, 0, 0.670);
+    font-size: 0.2em;
+}
+
 .fillheight {
-    min-height: 100%; 
+    position: absolute;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
 }
